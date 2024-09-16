@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.southeastlinuxfest.org/wp-content/uploads/2014/06/Murach_image-300x300.jpg" class="fixed-size">
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+    
+        <h2>Your information:</h2>
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" >
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" >
+        </div>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of Birth:</label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth">
+        </div>
+    
+        <h2>How did you hear about us?</h2>
+        <div class="form-group-2">
+          <input type="radio" id="searchEngine" name="heardAboutUs" value="Search Engine">
+          <label for="searchEngine">Search engine</label>
+          <input type="radio" id="wordOfMouth" name="heardAboutUs" value="Word of Mouth">
+          <label for="wordOfMouth">Word of mouth</label>
+          <input type="radio" id="socialMedia" name="heardAboutUs" value="Social Media">
+          <label for="socialMedia">Social Media</label>
+          <input type="radio" id="other" name="heardAboutUs" value="Other">
+          <label for="other">Other</label>
+        </div>
+    
+        <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+        <div class="form-group-2">
+          <input type="checkbox" id="receiveAnnouncements" name="receiveAnnouncements" value="YES">
+          <label for="receiveAnnouncements">YES, I'd like that.</label>
+        </div>
+        <div class="form-group-2">
+          <input type="checkbox" id="receiveEmailAnnouncements" name="receiveEmailAnnouncements" value="YES">
+          <label for="receiveEmailAnnouncements">YES, please send me email announcements.</label>
+        </div>
+    
+        <div class="form-group-2">
+          <label for="contactMethod">Please contact me by:</label>
+          <select id="contactMethod" name="contactMethod">
+            <option value="Email">Email or Postal Mail</option>
+          </select>
+        </div>
+    
+        <button class="button">Submit</button>
+      </div>
+</body>
+</html>

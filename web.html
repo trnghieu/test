@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button.red {
+  background-color: #f44336;
+}
+
+.button.red:hover {
+  background-color: #d6362e;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Certificate-update</h2>
+  <label for="certificate">Certificate:</label>
+  <input type="text" id="certificate" name="certificate">
+  
+  <label for="certificationName">Certification Name:</label>
+  <input type="text" id="certificationName" name="certificationName">
+  
+  <label for="certificationAuthority">Certification Authority:</label>
+  <input type="text" id="certificationAuthority" name="certificationAuthority">
+  
+  <label for="licenseNumber">License Number:</label>
+  <input type="text" id="licenseNumber" name="licenseNumber">
+  
+  <label for="achievedDate">Achieved Date:</label>
+  <input type="date" id="achievedDate" name="achievedDate">
+  
+  <label for="expiredDate">Expired Date:</label>
+  <input type="date" id="expiredDate" name="expiredDate">
+
+  <label for="score">Score:</label>
+  <input type="text" id="score" name="score">
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description"></textarea>
+
+  <input type="checkbox" id="notExpired" name="notExpired" value="true">
+  <label for="notExpired">This certificate does not expired</label>
+
+  <input type="checkbox" id="attendance" name="attendance" value="true">
+  <label for="attendance">This is certificate of attendance</label>
+
+  <button class="button" type="submit">Save</button>
+  <button class="button red" type="reset">Reset</button>
+  <button class="button" type="cancel">Cancel</button>
+</div>
+
+</body>
+</html>

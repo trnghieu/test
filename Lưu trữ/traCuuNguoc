@@ -1,0 +1,10 @@
+def traCuuNguoc(tuDien, gia_tri):
+    danhSachKhoa = [khoa for khoa, giaTriTuDien in tuDien.items() if giaTriTuDien == giaTri]
+    return danhSachKhoa
+
+# Ví dụ sử dụng hàm
+tuDien = {'khoa1': 'giaTri1', 'khoa2': 'giaTri2', 'khoa3': 'giaTri1'}
+giaTri = 'giaTri1'
+khoaUngVoiGiaTri = traCuuNguoc(tuDien, giaTri)
+
+print("Các khóa ứng với giá trị '{}': {}".format(giaTri, ', '.join(khoaUngVoiGiaTri)))
